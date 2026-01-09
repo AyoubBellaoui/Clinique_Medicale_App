@@ -7,7 +7,7 @@ const app = express();
 // get Homepage route 
 app.get('/', (req, res) => {
 
-    res.send('Express App works good');
+    res.send('Express App works good!');
 
 });
 
