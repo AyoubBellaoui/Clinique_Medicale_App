@@ -15,7 +15,7 @@ const PORT = 3000;
 
 app.listen(PORT, () => {
 
-    // msg to confirm The server is alive
+    // confirm The server is alive
     console.log(`Server running on http://localhost:${PORT}`);
 });
 
