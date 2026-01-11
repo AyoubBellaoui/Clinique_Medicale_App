@@ -1,6 +1,6 @@
-// import Express framework from node
+// Import Express framework from node
 const express = require('express');
-// create an express server and refer it to app
+// Create an express server and refer it to app
 const app = express();
 
 // Set view engine with EJS
@@ -8,16 +8,16 @@ app.set('view engine', 'ejs');
 
 // Middleware function (For any request, if the body is JSON, parse it)
 app.use(express.json());
-// later to understand
+//  Middleware function that parses URL-encoded data (the format used when HTML forms submit data with method="POST")
 app.use(express.urlencoded({ extended: true}));
 // Any file in public folder becomes accessible to the browser.
 app.use(express.static('public'));
 
-// when client req / sends it to auth routes
+// When client req '/' sends it to auth routes
 const authroutes = require('./routes/auth.routes');
 app.use('/', authroutes);
 
-// Starts the server and Makes it listen for incoming requests
+// Starts the server on PORT 3000 and Makes it listen for incoming requests
 const PORT = 3000;
 app.listen(PORT, () => {
 
