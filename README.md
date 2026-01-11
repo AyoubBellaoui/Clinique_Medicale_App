@@ -15,3 +15,4 @@ It provides a simple server structure to handle routes, APIs, and JSON data, and
 
 ## 📂 Project Structure
 
+- MVC
